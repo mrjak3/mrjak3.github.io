@@ -4,7 +4,7 @@ title: "HTB - LaCasaDePapel"
 author: "mrs3c"
 categories: Blog
 tags: [hackthebox, htb, pen-testing, certificates, cronjob, nodejs, openssl, otp, php, psysh, ssh rsa auth, ssh, vsftpd]
-image: htb/LaCasaDePapel/lacasa_logo.png
+image: htb/lacasadepapel/lacasa_logo.png
 ---
 
 To fill in later
@@ -60,7 +60,7 @@ Service Info: OS: Unix
 
  3.1 Browsing to HTTPS shows us an error that we need a client certificate to continue which we don't possess at the moment
 
-![discovery_https](https://mrjak3.github.io/assets/img/htb/LaCasaDePapel/3_https.png)
+![discovery_https](https://mrjak3.github.io/assets/img/3_https.png)
 
 ## 4. initial access - exploit public facing application - vsftp
 
@@ -90,7 +90,7 @@ exploit("10.10.10.131", 21)
  4.3 The code is pretty simple, it just creates a connection to the FTP port, sends in commands and then quiclky connects to the backdoored port at 6200.
  4.4 Running the script:
 
- ![exploit_vsftp](https://mrjak3.github.io/assets/img/htb/lacasadepapel/4.4-vsftp.png)
+ ![exploit_vsftp](https://mrjak3.github.io/assets/img/4.4-vsftp.png)
 
 ## 5. Psy shell
 
