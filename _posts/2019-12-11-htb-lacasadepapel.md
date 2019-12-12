@@ -15,7 +15,7 @@ To fill in later
 
 [Getting Started]({{ site.github.url }}{% post_url 2016-10-10-getting-started %}): getting started with installing Millennial, whether you are completely new to using Jekyll, or simply just migrating to a new Jekyll theme.
 
-##1. discovery - network service scanning - nmap
+## 1. discovery - network service scanning - nmap
 
 ```bash
 # Nmap 7.80 scan initiated Sun Dec  8 21:59:21 2019 as: nmap -sC -sV -Pn -oA nmap/lacasadepapel 10.10.10.131
@@ -48,19 +48,21 @@ PORT    STATE SERVICE  VERSION
 Service Info: OS: Unix
 ```
 
-##2. discovery - files and directories - http
+## 2. discovery - files and directories - http
 
  2.1 Navigating to port 80 we find a page which needs an OTP supplied by a QRCode. The page asks us to install Google Authenticator
+
 ![htb-lacasadepapel-2-http](https://mrjak3.github.io/assets/img/htb-lacasadepapel-2-http.png)
 
  2.2 Scanning the code using Google Authenticator on an Android phone gives us a code but it refuses to work either way. So, maybe its for internal users only. Lets keep this aside and come back later.
 
-##3. discovery - files and directories - https
+## 3. discovery - files and directories - https
 
  3.1 Browsing to HTTPS shows us an error that we need a client certificate to continue which we don't possess at the moment
+
 ![htb-lascasadepapel-3.0-https](https://mrjak3.github.io/assets/img/htb-lascasadepapel-3.0-https.png)
 
-##4. initial access - exploit public facing application - vsftp
+## 4. initial access - exploit public facing application - vsftp
 
  4.1 As seen from nmap, vsftp is version 2.3.4. A quick search allows the attacker to discover that the version was backdoored. Lets try to replicate the exploit code.
 
@@ -87,4 +89,5 @@ exploit("10.10.10.131", 21)
 
  4.3 The code is pretty simple, it just creates a connection to the FTP port, sends in commands and then quiclky connects to the backdoored port at 6200.
  4.4 Running the script:
+ 
  ![htb-lascasadepapel-4.4-vsftp](https://mrjak3.github.io/assets/img/htb-lascasadepapel-4.4-vsftp.png)
