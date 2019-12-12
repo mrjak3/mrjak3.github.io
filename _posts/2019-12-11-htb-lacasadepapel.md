@@ -88,6 +88,7 @@ exploit("10.10.10.131", 21)
 ```
 
  4.3 The code is pretty simple, it just creates a connection to the FTP port, sends in commands and then quiclky connects to the backdoored port at 6200.
+ 
  4.4 Running the script:
 
  ![exploit_vsftp](https://mrjak3.github.io/assets/img/htb-lacasadepapel-4.4_vsftp.png)
