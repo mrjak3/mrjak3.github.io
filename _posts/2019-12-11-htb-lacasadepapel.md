@@ -4,17 +4,9 @@ title: "HTB - LaCasaDePapel"
 author: "mrs3c"
 categories: Blog
 tags: [hackthebox, htb, pen-testing, certificates, cronjob, nodejs, openssl, otp, php, psysh, ssh rsa auth, ssh, vsftpd]
-image: lacasa_logo.png
 ---
-
-To fill in later
-
-# HTB retired machines - LaCasaDePapel
-
-## Video
-
+# Ippsec Video (click below)
 [![LaCasaDePapel video](https://mrjak3.github.io/assets/img/lacasa_logo.png)](https://www.youtube.com/watch?v=OSRCEOQQJ4E)
-
 
 ## Summary
 
