@@ -13,7 +13,7 @@ To fill in later
 
 ## Video
 
-[![](https://mrjak3.github.io/assets/img/lacasa_logo.png)(https://www.youtube.com/watch?v=OSRCEOQQJ4E)]
+[![LaCasaDePapel video](https://mrjak3.github.io/assets/img/lacasa_logo.png)](https://www.youtube.com/watch?v=OSRCEOQQJ4E)
 
 
 ## Summary
