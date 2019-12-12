@@ -4,7 +4,7 @@ title: "HTB - LaCasaDePapel"
 author: "mrs3c"
 categories: Blog
 tags: [hackthebox, htb, pen-testing, certificates, cronjob, nodejs, openssl, otp, php, psysh, ssh rsa auth, ssh, vsftpd]
-image: htb/lacasadepapel/lacasa_logo.png
+image: lacasa_logo.png
 ---
 
 To fill in later
