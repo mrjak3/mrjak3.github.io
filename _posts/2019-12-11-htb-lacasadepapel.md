@@ -4,7 +4,7 @@ title: "HTB - LaCasaDePapel"
 author: "mrs3c"
 categories: Blog
 tags: [hackthebox, htb, pen-testing, certificates, cronjob, nodejs, openssl, otp, php, psysh, ssh rsa auth, ssh, vsftpd]
-image: lacasa_logo.png
+image: htb/LaCasaDePapel/lacasa_logo.png
 ---
 
 To fill in later
@@ -91,3 +91,7 @@ exploit("10.10.10.131", 21)
  4.4 Running the script:
 
  ![exploit_vsftp](https://mrjak3.github.io/assets/img/htb/lacasadepapel/4.4-vsftp.png)
+
+## 5. Psy shell
+
+5.1 Lets try executing system commands using the `cmd` operator
