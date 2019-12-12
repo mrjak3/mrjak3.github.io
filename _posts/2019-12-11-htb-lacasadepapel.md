@@ -17,7 +17,7 @@ Fill out later
 
 ## 1. discovery - network service scanning - nmap
 
-```bash
+```python
 # Nmap 7.80 scan initiated Sun Dec  8 21:59:21 2019 as: nmap -sC -sV -Pn -oA nmap/lacasadepapel 10.10.10.131
 Nmap scan report for 10.10.10.131
 Host is up (0.42s latency).
@@ -68,7 +68,7 @@ Service Info: OS: Unix
 
  4.2 The code just tries a failed login, which triggers the backdoor on port 6200 and then executes commands from it. Lets do that using a small python script:
 
-```bash
+```python
 import socket
 import os
 import time
@@ -88,7 +88,7 @@ exploit("10.10.10.131", 21)
 ```
 
  4.3 The code is pretty simple, it just creates a connection to the FTP port, sends in commands and then quiclky connects to the backdoored port at 6200.
- 
+
  4.4 Running the script:
 
  ![exploit_vsftp](https://mrjak3.github.io/assets/img/htb-lacasadepapel-4.4_vsftp.png)
@@ -96,3 +96,17 @@ exploit("10.10.10.131", 21)
 ## 5. Psy shell
 
 5.1 Lets try executing system commands using the `cmd` operator
+
+5.2 We find that shell_exec is disabled which prevents us from executing system commands. However, we can still list directories and read files using `scandir()` and `file_get_contents()`
+
+![5.2.1](https://mrjak3.github.io/assets/img/htb-lacasadepapel-5.2.1.png)
+![5.2.2](https://mrjak3.github.io/assets/img/htb-lacasadepapel-5.2.2.png)
+
+5.3 We already know that we need a client certificate to access the service on HTTPS. In order to create one we need the CA certificate. Let's find it.
+
+5.4 Looking at the home folders of the users we see five users.
+
+![5.4](https://mrjak3.github.io/assets/img/htb-lacasadepapel-5.4.png)
+
+
+5.5 Let's inspect each one of them. After some enumeration we see `ca.key` in ``/home/nairobi`
