@@ -52,7 +52,7 @@ Service Info: OS: Unix
 
  2.1 Navigating to port 80 we find a page which needs an OTP supplied by a QRCode. The page asks us to install Google Authenticator
 
-![htb-lacasadepapel-2-http](https://mrjak3.github.io/assets/img/htb-lacasadepapel-2-http.png)
+![2_http](https://mrjak3.github.io/assets/img/htb/LaCasaDePapel/2_http.png)
 
  2.2 Scanning the code using Google Authenticator on an Android phone gives us a code but it refuses to work either way. So, maybe its for internal users only. Lets keep this aside and come back later.
 
@@ -60,7 +60,7 @@ Service Info: OS: Unix
 
  3.1 Browsing to HTTPS shows us an error that we need a client certificate to continue which we don't possess at the moment
 
-![htb-lascasadepapel-3.0-https](https://mrjak3.github.io/assets/img/htb-lascasadepapel-3.0-https.png)
+![3.0-https](https://mrjak3.github.io/assets/img/htb/LaCasaDePapel/3_https.png)
 
 ## 4. initial access - exploit public facing application - vsftp
 
@@ -90,4 +90,4 @@ exploit("10.10.10.131", 21)
  4.3 The code is pretty simple, it just creates a connection to the FTP port, sends in commands and then quiclky connects to the backdoored port at 6200.
  4.4 Running the script:
 
- ![htb-lascasadepapel-4.4-vsftp](https://mrjak3.github.io/assets/img/htb-lascasadepapel-4.4-vsftp.png)
+ ![4.4_vsftp](https://mrjak3.github.io/assets/img/htb/lacasadepapel/4.4-vsftp.png)
