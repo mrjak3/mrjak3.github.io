@@ -13,7 +13,7 @@ To fill in later
 
 ## Summary
 
-[Getting Started]({{ site.github.url }}{% post_url 2016-10-10-getting-started %}): getting started with installing Millennial, whether you are completely new to using Jekyll, or simply just migrating to a new Jekyll theme.
+Fill out later
 
 ## 1. discovery - network service scanning - nmap
 
@@ -89,5 +89,5 @@ exploit("10.10.10.131", 21)
 
  4.3 The code is pretty simple, it just creates a connection to the FTP port, sends in commands and then quiclky connects to the backdoored port at 6200.
  4.4 Running the script:
- 
+
  ![htb-lascasadepapel-4.4-vsftp](https://mrjak3.github.io/assets/img/htb-lascasadepapel-4.4-vsftp.png)
