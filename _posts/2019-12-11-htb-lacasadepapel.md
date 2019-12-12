@@ -47,3 +47,8 @@ PORT    STATE SERVICE  VERSION
 |_  http/1.0
 Service Info: OS: Unix
 ```
+
+## 2 - discovery - files and directories - http
+
+Navigating to port 80 we find a page which needs an OTP supplied by a QRCode. The page asks us to install Google Authenticator
+(https://mrjak3.github.io/assets/img/htb-lacasadepapel-2-http.png)
