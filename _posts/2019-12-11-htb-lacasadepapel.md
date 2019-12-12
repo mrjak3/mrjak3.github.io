@@ -52,7 +52,7 @@ Service Info: OS: Unix
 
  2.1 Navigating to port 80 we find a page which needs an OTP supplied by a QRCode. The page asks us to install Google Authenticator
 
-![2_http](https://mrjak3.github.io/assets/img/htb/LaCasaDePapel/2_http.png)
+![2_http](https://mrjak3.github.io/assets/img/htb-lacasadepapel-2-http.png)
 
  2.2 Scanning the code using Google Authenticator on an Android phone gives us a code but it refuses to work either way. So, maybe its for internal users only. Lets keep this aside and come back later.
 
